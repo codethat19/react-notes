@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {HiOutlineClock} from 'react-icons/hi'
 
 const NoteItem = ({note, colorId}) => {
 
@@ -13,8 +14,9 @@ const NoteItem = ({note, colorId}) => {
 
   return (
     <Link to={`/edit-note/${note.id}`} style={backgroundColour}className="note">
-        <h4>{note.title.length > 50 ? (note.title.substr(0, 50)) + "..." : note.title}</h4>
-        <p>{note.date}</p>
+        <h3>{note.title.length > 70 ? (note.title.substr(0, 70)) + "..." : note.title}</h3>
+        <h5>{note.details.length > 120 ? (note.details.substr(0, 120)) + "..." : note.details}</h5>
+        <p><HiOutlineClock className='clock'/>{note.date}</p>
     </Link>
   )
 }

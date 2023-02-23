@@ -5,6 +5,7 @@ import dummyNotes from '../dummy_notes'
 import { Link } from 'react-router-dom';
 import NoteItem from '../components/NoteItem';
 import {GrClose} from 'react-icons/gr';
+import {AiFillPlusCircle} from 'react-icons/ai';
 
 const Notes = ({notes}) => {
 
