@@ -63,7 +63,7 @@ body {
     height: 100vh;
     width: 100%;
     
-    padding: 2rem 4rem;
+    padding: 2rem 3rem;
     overflow-y: scroll;
     position: relative;
 }
@@ -116,7 +116,7 @@ h2 {
 .notes__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.2rem;
+    gap: 1.5rem;
 }
 
 .empty__notes {
