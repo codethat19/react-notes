@@ -9,12 +9,15 @@ const CreateNote = ({setNotes}) => {
   const [details, setDetails] = useState('');
   const date = useCreateDate();
   const navigate = useNavigate();
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (title && details) {
-      const note = { id: uuid(), title, details, date }
+      const colorId = Math.floor(Math.random() * 10);
+      // console.log("From CreateNote" + colorId);
+      const note = { id: uuid(), title, details, date, colorId }
 
       //Add the new note to the Notes Array
       setNotes(prevNotes => [note, ...prevNotes]);
